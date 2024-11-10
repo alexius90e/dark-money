@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -52,4 +53,106 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
+}
+
+.first-screen {
+  padding: 124px 0;
+}
+.first-screen__title {
+  margin: 0 0 32px;
+  font-weight: 700;
+  font-size: 44px;
+  color: #1b1b1b;
+  text-align: center;
+}
+.first-screen__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.first-screen__links-text {
+  display: inline-block;
+  margin: 26px 0;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #272b34;
+}
+.first-screen__links-login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 22px 45px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border: 2px solid #1f1f1f;
+  border-radius: 20px;
+  transition: filter ease-in-out 0.2s;
+  cursor: pointer;
+}
+.first-screen__links-login::before {
+  content: "";
+  width: 82px;
+  aspect-ratio: 1/1;
+  border-right: 2px solid #d9d9d9;
+  background: url(../assets/lock.svg) center no-repeat;
+}
+.first-screen__links-login::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  z-index: -1;
+  display: block;
+  border: 2px solid #1f1f1f;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #9c9b9c 0%, #6d6c6d 51.5%, #9c9b9c 100%);
+}
+.first-screen__links-login:hover {
+  filter: brightness(1.2);
+}
+.first-screen__links-login-text {
+  display: inline-block;
+  max-width: 166px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 114%;
+  color: #fff;
+}
+.first-screen__links-link {
+  position: relative;
+  display: block;
+  padding: 40px;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 114%;
+  color: #fff;
+  text-align: center;
+  word-break: break-all;
+  border: 2px solid #1f1f1f;
+  border-radius: 20px;
+  transition: filter ease-in-out 0.2s;
+  cursor: pointer;
+}
+.first-screen__links-link::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  z-index: -1;
+  display: block;
+  border: 2px solid #1f1f1f;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #9c9b9c 0%, #6d6c6d 51.5%, #9c9b9c 100%);
+}
+.first-screen__links-link:hover {
+  filter: brightness(1.2);
 }
