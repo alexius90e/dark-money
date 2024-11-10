@@ -1,2 +1,37 @@
 .footer {
+  padding: 98px;
+  background: #706f70;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #ededed;
+  }
+
+  &__tg {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: #ededed;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 38px;
+      height: 38px;
+      background: url(../assets/tg.svg) center no-repeat;
+    }
+  }
 }
