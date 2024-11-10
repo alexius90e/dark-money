@@ -1,0 +1,18 @@
+.header {
+  padding: 68px 0 63px;
+  background: linear-gradient(180deg, #706f70 0%, #cccccc 100%);
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    &-image {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
